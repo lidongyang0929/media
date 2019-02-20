@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0}
+a{color: inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+.header{
+    position: relative;
+}
+.logo{
+    width: 60px; height: 60px;border-radius: 30px;
+    background: grey;
+}
+.nav{display:none;background:grey;
+     margin-top: 10px;
+}
+.nav.active{display: flex;justify-content: space-between;}
+.nav>li{
+    float: left;
+    margin: 10px;
+}
+header > button{
+    position: absolute;
+    top: 30px;
+    right:30px;
+}
+.nav2{display: none;}
+@media(min-width: 451px){
+    .nav{display: none !important;}
+    header > button{display: none;}
+    .nav2{display: block;}
+    header{display: flex;}
+    header .nav2{display: flex; align-items: center;
+    margin-left: 20px;}
+    header .nav2 li{margin:0  10px;}
+}
